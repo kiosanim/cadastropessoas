@@ -5,7 +5,7 @@
   },
   "pgAwsDS": {
     "host": "PG_HOST",
-    "port": PG_PORT,
+    "port": "PG_PORT",
     "database": "PG_DBNAME",
     "password": "PG_PWD",
     "name": "pgAwsDS",
