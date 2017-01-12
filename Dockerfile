@@ -10,6 +10,7 @@ ARG PG_PWD
 # Create app directory
 WORKDIR /usr/src/app
 ADD . .
-RUN npm --proxy ${PROXY} install
+#RUN npm --proxy ${PROXY} install
+RUN npm install
 
 EXPOSE 3000
