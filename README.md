@@ -26,4 +26,4 @@ http://0.0.0.0:3000/explorer
 docker build --build-arg PROXY="http://HOST_DO_PROXY:3128" -t apigw-rest-svc:latest .
 
 #Para executar o container:
-docker run -p 3000:3000 -e PG_HOST=dbapigwst.cw0n9pxne86c.sa-east-1.rds.amazonaws.com -e PG_PORT=5432 -e PG_DBNAME=NOME_BD -e PG_USER=USER_BD -e PG_PWD=PWD --entrypoint="/usr/src/app/start.sh" apigw-rest-svc:latest
+docker run -p 3000:3000 -e PG_HOST=NOME_HOST -e PG_PORT=5432 -e PG_DBNAME=NOME_BD -e PG_USER=USER_BD -e PG_PWD=PWD --entrypoint="/usr/src/app/start.sh" apigw-rest-svc:latest
